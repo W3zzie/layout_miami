@@ -1,0 +1,45 @@
+@use '../utils/mixins' as *;
+
+.button {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+  background-color: #292929;
+  color: white;
+  border-radius: 40px;
+  height: 56px;
+  width: 100%;
+  border: none;
+
+  @include for-tablet {
+    display: block;
+    margin: 0 auto;
+    width: 392px;
+  }
+
+  &--secondary {
+    @include for-tablet {
+      display: block;
+      width: 100%;
+    }
+
+    @include for-desktop {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &:hover {
+    color: #292929;
+    background-color: white;
+    border: 3px solid #292929;
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: #111;
+    color: white;
+  }
+}

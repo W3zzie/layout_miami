@@ -1,0 +1,128 @@
+@use '../utils/mixins' as *;
+
+.title {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 32px;
+  letter-spacing: -1.5px;
+  text-align: left;
+  color: #292929;
+
+  align-self: flex-end;
+  grid-column: 1 / 3;
+
+  @include for-tablet {
+    grid-column: 1 / 7;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: -1.5px;
+    text-align: left;
+  }
+
+  @include for-desktop {
+    grid-column: 1 / 13;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: -1.5px;
+    text-align: left;
+  }
+
+  &--decorated {
+    &::before {
+      content: url(../images/Sound\ waves.svg);
+      display: block;
+      height: 58px;
+      width: 48px;
+      margin-bottom: 15px;
+
+      @include for-tablet {
+        content: url(../images/Sound\ waves-for-tablet.svg);
+        height: 63px;
+        width: 76px;
+        margin-bottom: 50px;
+      }
+
+      @include for-desktop {
+        content: url(../images/Sound\ waves-for-tablet.svg);
+        height: 63px;
+        width: 76px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  &--section {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -1.5px;
+    text-align: center;
+    color: #292929;
+    font-style: normal;
+    margin-bottom: 48px;
+
+    &__howtobuy {
+      grid-column: span 3;
+      align-self: flex-start;
+      text-align: left;
+
+      @include for-desktop {
+        grid-column: span 5;
+        align-self: flex-start;
+      }
+    }
+
+    @include for-tablet {
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: -1.5px;
+      text-align: center;
+    }
+
+    @include for-desktop {
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 48px;
+      letter-spacing: -1.5px;
+      text-align: center;
+    }
+  }
+
+  &--pictures {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    text-align: left;
+    font-style: normal;
+    margin-bottom: 40px;
+
+    @include for-tablet {
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 33.6px;
+      text-align: left;
+    }
+
+    @include for-desktop {
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 33.6px;
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@use '../utils/mixins' as *;
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  align-items: center;
+
+  @include for-tablet {
+    padding-top: 32px;
+  }
+
+  @include for-desktop {
+    padding-top: 32px;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 24px;
+
+    @include for-tablet {
+      gap: 32px;
+    }
+
+    @include for-desktop {
+      gap: 32px;
+    }
+  }
+}
