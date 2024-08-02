@@ -1,0 +1,7 @@
+@use '../utils/mixins' as *;
+
+.breaker {
+  @include for-tablet {
+    display: none;
+  }
+}

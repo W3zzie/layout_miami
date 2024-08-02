@@ -1,7 +1,27 @@
-@import 'utils';
-@import 'fonts';
-@import 'typography';
+@import './utils/reset';
+@import './blocks/header';
+@import './blocks/title';
+@import './blocks/navigation';
+@import './blocks/logo';
+@import './blocks/main';
+@import './blocks/section';
+@import './blocks/burger';
+@import './blocks/products';
+@import './blocks/product';
+@import './blocks/pictures';
+@import './blocks/button';
+@import './blocks/howtobuy';
+@import './blocks/contact';
+@import './blocks/form';
+@import './blocks/address';
+@import './blocks/footer';
+@import './blocks/menu';
+@import './blocks/links';
+@import './blocks/phone';
+@import './blocks/breaker';
+@import './blocks/wrapper';
+@import './blocks/close';
 
-body {
-  background: $c-gray;
+:root {
+  scroll-behavior: smooth;
 }
